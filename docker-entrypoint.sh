@@ -19,8 +19,11 @@ if [ "`ls -A $WORKDIR`" = "" ]; then
     echo "github address https://github.com/fluid-dev/hexo-theme-fluid"
     npm install --save hexo-theme-fluid
     sed -i 's/theme: landscape/theme: fluid/g' _config.yml
+    #fluid推荐使用，_config.fluid.yml 作为配置文件修改
     cp  _config.yml _config.fluid.yml
-
+    #添加about页面
+    hexo new page about
+    sed -i '/title:/a\layout: about' source/about/index.md
 else
     echo ">>>>>>>>>> existed "
 fi
