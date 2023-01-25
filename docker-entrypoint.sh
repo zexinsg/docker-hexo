@@ -12,9 +12,12 @@ if [ "`ls -A $WORKDIR`" = "" ]; then
         hexo-word-counter \
         hexo-generator-sitemap \
         hexo-server
-    echo ">>>>>>>>>>> install next theme"
-    git clone https://github.com/next-theme/hexo-theme-next.git themes/next
-    sed -i 's/theme: landscape/theme: next/g' _config.yml
+    #echo ">>>>>>>>>>> install next theme"
+    #git clone https://github.com/next-theme/hexo-theme-next.git themes/next
+    #sed -i 's/theme: landscape/theme: next/g' _config.yml
+    echo "install fluid theme"
+    echo "github address https://github.com/fluid-dev/hexo-theme-fluid"
+    npm install --save hexo-theme-fluid
 else
     echo ">>>>>>>>>> existed "
 fi
