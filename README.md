@@ -1,5 +1,5 @@
 # docker-hexo
-<p align="center">í ¼í·¨í ¼í·³ ä¸­æ–‡ç®€ä½“  |  <a title="English" href="README_en.md">í ¼í·¬í ¼í·§ English</a></p>
+<p align="center">ðŸ‡¨ðŸ‡³ ä¸­æ–‡ç®€ä½“  |  <a title="English" href="README_en.md">ðŸ‡¬ðŸ‡§ English</a></p>
 How to install
 1. install docker and docker compose
 2. copy git code in your personal folder , for example "hexo"
