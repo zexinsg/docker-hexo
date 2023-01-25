@@ -18,6 +18,7 @@ if [ "`ls -A $WORKDIR`" = "" ]; then
     echo "install fluid theme"
     echo "github address https://github.com/fluid-dev/hexo-theme-fluid"
     npm install --save hexo-theme-fluid
+    cp  _config.yml _config.fluid.yml
 else
     echo ">>>>>>>>>> existed "
 fi
