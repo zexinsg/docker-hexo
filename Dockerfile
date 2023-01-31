@@ -4,7 +4,7 @@ FROM node:${NODE_VERSION}-bullseye
 RUN export DEBIAN_FRONTEND=noninteractive && \
     export DEBCONF_NONINTERACTIVE_SEEN=true && \
     apt update && apt upgrade -y && \
-    apt install git vim -y && \
+    apt install git vim rsync -y && \
     update-alternatives --set editor /usr/bin/vim.basic && \
     vim_version=$(ls /usr/share/vim/ |egrep "vim[0-9]{2,3}"); \
     for vim_setting in ${vim_version};do \

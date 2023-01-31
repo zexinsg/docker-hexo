@@ -9,12 +9,14 @@ if [ "`ls -A $WORKDIR`" = "" ]; then
     echo ">>>>>>>>>>> 安装依赖和hexo插件"
     npm install
     npm install --save hexo-generator-searchdb \
+	hexo-blog-encrypt \
         hexo-word-counter \
         hexo-generator-sitemap \
 	hexo-generator-baidu-sitemap \
 	hexo-generator-index \
         hexo-server
     echo "hexo-generator-index 用于文章置顶功能 Front-matter 中配置 sticky 属性,可以让文章首页前排显示,sticky 数值越大，该文章越靠前"
+    echo "hexo-blog-encrypt 用于文章加密"
     #echo ">>>>>>>>>>> install next theme"
     #git clone https://github.com/next-theme/hexo-theme-next.git themes/next
     #sed -i 's/theme: landscape/theme: next/g' _config.yml
